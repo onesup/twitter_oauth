@@ -51,8 +51,8 @@ module TwitterOAuth
     #
     
     # Returns the members of the specified list.
-    def list_members(user, list)
-      get("/#{user}/#{list}/members.json")
+    def list_members(list)
+      get("/1/lists/members.json?list_id=#{list}")
     end
     
     # Add a member to a list. The authenticated user must own the list to be able to add members to it. 
