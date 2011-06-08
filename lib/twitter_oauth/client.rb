@@ -1,3 +1,4 @@
+require 'twitter_oauth/stream'
 require 'twitter_oauth/timeline'
 require 'twitter_oauth/status'
 require 'twitter_oauth/account'
