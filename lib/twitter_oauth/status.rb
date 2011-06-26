@@ -3,7 +3,7 @@ module TwitterOAuth
     
     # Returns a single status, specified by the id parameter below.
     def status(id)
-      get("/statuses/show/#{id}.json")
+      get("/statuses/show/#{id}.json?include_entities=true")
     end
     
     # Updates the authenticating user's status.
